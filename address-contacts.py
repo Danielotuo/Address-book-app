@@ -33,7 +33,7 @@ class Contact(QtWidgets.QMainWindow):
         self.tableView.setModel(self.model)
         self.tableView.horizontalHeader().setSectionResizeMode(1)
 
-        row = (QStandardItem('Daniel'), QStandardItem('Otuo'), QStandardItem('danielotuoach@gmail.com') )
+        row = (QStandardItem('username'), QStandardItem('username'), QStandardItem('username@gamil.com') )
         self.model.appendRow(row)
 
         self.actionNew.triggered.connect(self.addContact)
