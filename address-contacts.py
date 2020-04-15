@@ -7,7 +7,7 @@ from PyQt5.uic import loadUiType
 
 class AddContact(QtWidgets.QDialog):
     def __init__(self, model):
-        super(AddContact, self).__init__()
+        super().__init__()
         self.w = uic.loadUi('add.ui', self)
         print('add.ui')
         self.model = model
@@ -25,8 +25,8 @@ class AddContact(QtWidgets.QDialog):
 
 class Contact(QtWidgets.QMainWindow):
     def __init__(self):
-        super(Contact, self).__init__()
-        uic.loadUi('window.ui', self)
+        super().__init__()
+        uic.loadUi('address-window.ui', self)
 
         self.model = QStandardItemModel()
         self.model.setHorizontalHeaderLabels(['First Name', 'Last Name', 'Email'])
